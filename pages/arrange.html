@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrange</title>
+    <style>
+        .container-1 {
+            border: 2px solid #c1c1c1;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .smaller-1 {
+            border: 2px solid #4c3752;
+            width: 30%;
+        }
+        .container-2 {
+            border: 2px solid #c1c1c1;
+            margin-top: 20px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .smaller-2 {
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            border: 2px solid #210fa2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-1">
+        <div class="smaller-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam illo consequuntur fugiat sed possimus inventore, numquam, blanditiis velit iure modi fugit similique. Aspernatur nulla laudantium dignissimos consequuntur ipsa, porro provident.</div>
+        <div class="smaller-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis earum consequuntur alias in esse similique, ipsa delectus hic! Iusto dicta necessitatibus provident? Perspiciatis adipisci expedita eveniet sint rem est eligendi.</div>
+        <div class="smaller-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi maiores nemo quod alias rem atque magnam, ad, tempora dolor, fugiat sunt dolores expedita architecto. Voluptatem laborum quae sit accusamus laudantium?</div>
+    </div>
+    <div class="container-2">
+        <div class="smaller-2">
+            <h2>Hello</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="cont1">
+            Big container
+        </div>
+        <div class="cont2">
+            <!-- Big container with other containers -->
+            <div class="small1">
+
+            </div>
+            <div class="small2">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

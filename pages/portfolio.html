@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+        * {
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            font-family: Poppins, 'sans-serif';
+        }
+        :root {
+            --bg-color: #dedae9;
+            --primary: #01a29c;
+            --hover: #008170;
+
+            --h1-font: 2.2rem;
+            --h2-font: 1.1rem;
+
+            --p-font: 0.9rem;
+
+            --m-1: 0.4rem;
+            --m-4: 4rem
+        }
+        body {
+            background-color: #1c2834;
+            color: white;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--bg-color);
+            padding: 18px 100px;
+        }
+        .logo {
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--primary);
+            font-family: cursive;
+        }
+        .nav {
+            display: flex;
+        }
+        .nav a {
+            font-size: 1rem;
+            padding: 10px 20px;
+            color:#222435;
+            font-weight: 500;
+            transition: 0.1s;
+        }
+        .nav li a{
+            border-radius: 3px;
+        }
+        .nav a:hover {
+            background: var(--primary);
+            color: #fff;
+        }
+        .hero {
+            min-height: 30vw;
+            display: flex;
+            align-items: center;
+            color: #222435;
+            background: var(--bg-color);
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        .hero-text h1 {
+            font-size: var(--h1-font);
+            letter-spacing: 1px;
+        }
+        .hero-text span {
+            color: var(--primary);
+        }
+        .hero-text h2 {
+            font-size: var(--h2-font);
+            margin: var(--m-1) 0;
+        }
+        .hero-text p {
+            font-size: var(--p-font);
+            line-height: 22px;
+            max-width: 90%;
+            margin-bottom: var(--m-4);
+        }
+        .cta-btn {
+            padding: 10px 25px;
+            background-color: var(--primary);
+            color: #fff;
+            border-radius: 3px;
+            transition: 0.4s;
+        }
+        .cta-btn:hover {
+            background: var(--hover);
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Kavete</a>
+        <ul class="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Hey! I am <span>Kavete</span></h1>
+            <h2>I am a tech enthusiat</h2>
+            <p>My skills in web development include HTML, CSS and Bootstrap.I would say my JavaScript knowledge is intermediate. I am also currently learning Python and Django. I am generally curious on technology and science in general. I also have experience in Arduino programming.</p>
+            <a href="tel:0791868732" class="cta-btn">Give me a call</a>
+        </div>
+        <div class="hero-image">
+            <img src="/images/profile.png" alt="me">
+        </div>
+
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2f92acd9b1.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2f92acd9b1.js" crossorigin="anonymous"></script>
+    <style>
+        form {
+            width: 40%;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            padding: 25px 16px;
+            font-family: Raleway, "sans-serif";
+        }
+
+        @media screen and (max-width:600px) {
+            form {
+                width: 90%;
+            }
+        }
+
+        @media screen and (601px <= width <= 800px) {
+            form {
+                width: 60%;
+            }
+        }
+        input {
+            width: 100%;
+            margin-bottom: 16px;
+            padding-top: 8px;
+            padding-right: 5px;
+            padding-bottom: 8px;
+            padding-left: 5px;
+            /* border: 1px solid rgb(68, 153, 68); */
+            border: none;
+            border-bottom:1px solid #449944 ;
+            /* border-radius: 3px; */
+        }
+        button {
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+            background-color: #084108;
+            color: white;
+            border-radius: 3px;
+            border: none;
+            font-size: 1.2rem;
+            transition: background 0.2s ease-in-out;
+        }
+        button:hover {
+            background-color: #021802;
+
+        }
+        input:focus {
+            outline: none;
+            border-bottom: 2px solid rgb(4, 48, 4);
+        }
+        * {
+            box-sizing: border-box;
+        }
+         icon {
+            position: absolute;
+            width: 100%;
+            margin-bottom: 10px;
+            text-align: center;
+            min-width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>HTML Forms</h1> -->
+    <form action="">
+        <div>
+            <label for="name">Names</label>
+            <i class="fas fa-user icon"></i>
+            <input type="text" required minlength="4" maxlength="15" placeholder="Jane Doe">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <i class="fas fa-envelope icon"></i>
+            <input type="email" required placeholder="john@domain.web">
+        </div>
+       
+        <div>
+            <label for="date">Date</label>
+            <input type="date" min="1990/01/01" max="2019/01/01">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <i class="fas fa-lock icon"></i>
+            <input type="password" placeholder=" Strong password">
+        </div>
+        <div>
+            <label for="weight">Weight in Kilograms</label>
+            <input type="number" placeholder="65">
+        </div>
+        <div>
+            <button type="submit"> Submit</button>
+        </div>
+    </form>
+    
+</body>
+</html>
